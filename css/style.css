@@ -1,0 +1,67 @@
+#app:before,#app:after{
+	content:"";
+	display:block;
+	background-image:url('../img/spike.svg');
+	height: 500px;
+	width:30px;
+	position:absolute;
+}
+
+#app:before{
+	transform:rotate(180deg);
+}
+
+#app:after{
+	right:0;
+}
+
+.char{    
+	background-size: 24px!important;
+    background-repeat: no-repeat!important;
+}
+
+.zombie{
+	animation:zombieWalk 2s infinite;
+	-webkit-animation: zombieWalk 2s infinite alternate;
+	background-size: 120px!important;;
+}
+
+@keyframes zombieWalk{
+	0%{background-position:0px 0px;}
+	6.249%{background-position:0px 0px;}
+	6.25%{background-position:30px 0px;}
+	12.499%{background-position:30px 0px;}
+	12.50%{background-position:60px 0px;}
+	18.749%{background-position:60px 0px;}
+	18.75%{background-position:90px 0px;}
+	24.999%{background-position:90px 0px;}
+	25%{background-position:0px 30px;}
+	31.249%{background-position:0px 30px;}
+	31.25%{background-position:30px 30px;}
+	37.499%{background-position:30px 30px;}
+	37.50%{background-position:60px 30px;}
+	43.749%{background-position:60px 30px;}
+	43.75%{background-position:90px 30px;}
+	49.99%{background-position:90px 30px;}
+	50%{background-position:0px 60px;}
+	56.249%{background-position:0px 60px;}
+	56.25%{background-position:30px 60px;}
+	62.499%{background-position:30px 60px;}
+	62.50%{background-position:60px 60px;}
+	68.749%{background-position:60px 60px;}
+	68.75%{background-position:90px 60px;}
+	74.999%{background-position:90px 60px;}
+	75%{background-position:0px 90px;}
+	81.249%{background-position:0px 90px;}
+	81.25%{background-position:30px 90px;}
+	87.499%{background-position:30px 90px;}
+	87.50%{background-position:60px 90px;}
+	93.749%{background-position:60px 90px;}
+	93.75%{background-position:90px 90px;}
+	99.99%{background-position:90px 90px;}
+	100%{background-position:0px 0px;}
+}
+
+.reflectX{
+	transform: rotateY(180deg);
+}
